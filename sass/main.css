@@ -1,0 +1,70 @@
+body {
+  background-image: url("http://s1.1zoom.net/big0/715/France_Scenery_Roads_439379.jpg");
+  background-size: cover;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif; }
+
+/*Labels*/
+.title {
+  position: absolute;
+  display: block; }
+
+#title {
+  margin-left: 485px;
+  margin-top: 17.5px; }
+
+#xTitle {
+  margin-top: 505px;
+  margin-left: 555px; }
+
+#yTitle {
+  margin-left: 215px;
+  margin-top: 315px;
+  transform: rotate(270deg);
+  transform-origin: left top 0; }
+
+#keyClean {
+  margin-left: 865px;
+  margin-top: 298px; }
+
+#keyDoping {
+  margin-left: 865px;
+  margin-top: 324px; }
+
+#chartContainer {
+  margin: 35px 0 0 175px;
+  height: 550px;
+  width: 1000px;
+  background-color: white;
+  border-radius: 15px; }
+
+.tooltip {
+  background-color: #8393db;
+  border-radius: 2px;
+  height: 100px;
+  width: 240px;
+  font-size: 12px;
+  text-align: center; }
+
+.toolText {
+  margin-top: 5px;
+  line-height: 150%; }
+
+.pointClean {
+  border: 1px solid black;
+  fill: #08043a; }
+  .pointClean:hover {
+    fill: #4b3de5; }
+
+.pointDoping {
+  border: 1px solid black;
+  fill: #a01109; }
+  .pointDoping:hover {
+    fill: #d8423a; }
+
+.grid {
+  stroke: red;
+  stroke-opacity: 0.2;
+  shape-rendering: crispEdges; }
+
+/*# sourceMappingURL=main.css.map */

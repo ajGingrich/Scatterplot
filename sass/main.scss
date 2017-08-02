@@ -1,0 +1,77 @@
+$barColor: #09961e;
+$height: 420px;
+$width: 820px;
+$chartMarginLeft: 175px;
+$chartMarginTop: 35px;
+
+body {
+  background-image: url('http://s1.1zoom.net/big0/715/France_Scenery_Roads_439379.jpg');
+  background-size: cover;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/*Labels*/
+.title {
+  position: absolute;
+  display: block;
+}
+#title {
+  margin-left: $chartMarginLeft + $width/2 - 100px;
+  margin-top: $chartMarginTop/2;
+}
+#xTitle {
+  margin-top: $height + $chartMarginTop + 50;
+  margin-left: $chartMarginLeft + $width/2 - 30px;
+}
+#yTitle {
+  margin-left: $chartMarginLeft + 40;
+  margin-top: $chartMarginTop + $height/2 + 70;
+  transform: rotate(270deg);
+  transform-origin: left top 0;
+}
+#keyClean {
+  margin-left: $chartMarginLeft + $width + 40 - 170;
+  margin-top: $chartMarginTop + $height + 60 - 217;
+}
+#keyDoping {
+  margin-left: $chartMarginLeft + $width + 40 - 170;
+  margin-top: $chartMarginTop + $height + 60 - 191;
+}
+#chartContainer {
+  margin: $chartMarginTop 0 0 $chartMarginLeft;
+  height: 550px;
+  width: 1000px;
+  background-color: white;
+  border-radius: 15px;
+}
+.tooltip {
+  background-color: #8393db;
+  border-radius: 2px;
+  height: 100px;
+  width: 240px;
+  font-size: 12px;
+  text-align: center;
+}
+.toolText {
+  margin-top: 5px;
+  line-height: 150%;
+}
+.pointClean {
+  border: 1px solid black;
+  fill: #08043a;
+  &:hover {
+    fill: #4b3de5;
+  }
+}
+.pointDoping {
+  border: 1px solid black;
+  fill: #a01109;
+  &:hover {
+    fill: #d8423a;
+  }
+}
+.grid {
+  stroke: red;
+  stroke-opacity: 0.2;
+  shape-rendering: crispEdges;
+}
